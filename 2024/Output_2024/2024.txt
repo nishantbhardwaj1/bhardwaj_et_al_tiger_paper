@@ -1,0 +1,65 @@
+> AIC(tiger_secr_2024, tiger_secr_go_het_2024, tiger_secr_sig_het_2024, tiger_secr_go_sig_het_2024)
+                                                model   detectfn npar    logLik      AIC     AICc  dAICc AICcwt
+tiger_secr_sig_het_2024     D~1 g0~1 sigma~h2 pmix~h2 halfnormal    5 -703.3308 1416.662 1418.662  0.000 0.8016
+tiger_secr_go_sig_het_2024 D~1 g0~h2 sigma~h2 pmix~h2 halfnormal    6 -703.2793 1418.559 1421.455  2.793 0.1984
+tiger_secr_go_het_2024      D~1 g0~h2 sigma~1 pmix~h2 halfnormal    5 -716.6912 1443.382 1445.382 26.720 0.0000
+tiger_secr_2024                      D~1 g0~1 sigma~1 halfnormal    3 -748.8988 1503.798 1504.548 85.886 0.0000
+
+
+
+
+> # summary for best fit model
+> summary(tiger_secr_sig_het_2024)
+$versiontime
+[1] "4.6.10, run 17:14:50 06 Nov 2024, elapsed 9.96 s"
+
+$traps
+ Detector Number  Spacing UsagePct
+    count    128 913.6223 4091.406
+
+$capthist
+ Occasions Detections    Animals  Detectors      Moves   Animals2 
+         1        298         36        128        129         28 
+
+$mask
+ Cells Spacing  Area
+   276    1000 27600
+
+$modeldetails
+    CL fixed distribution hcov
+ FALSE  none      poisson     
+
+$AICtable
+                     model   detectfn npar    logLik      AIC     AICc
+ D~1 g0~1 sigma~h2 pmix~h2 halfnormal    5 -703.3308 1416.662 1418.662
+
+$coef
+                beta    SE.beta        lcl        ucl
+D         -6.5882753 0.16776626 -6.9170911 -6.2594595
+g0        -3.5557701 0.08629768 -3.7249104 -3.3866297
+sigma      6.9540506 0.08302074  6.7913330  7.1167683
+sigma.h22  0.9166330 0.08203699  0.7558435  1.0774226
+pmix.h22  -0.2394078 0.34883710 -0.9231160  0.4443003
+
+$predicted
+$predicted$`session = 1, h2 = 1`
+       link     estimate  SE.estimate          lcl          ucl
+D       log 1.376412e-03 2.325498e-04 9.907076e-04 1.912279e-03
+g0    logit 2.776638e-02 2.329641e-03 2.354741e-02 3.271594e-02
+sigma   log 1.047384e+03 8.710462e+01 8.900992e+02 1.232461e+03
+pmix  logit 5.595677e-01 8.597149e-02 3.907168e-01 7.156766e-01
+
+$predicted$`session = 1, h2 = 2`
+       link     estimate  SE.estimate          lcl          ucl
+D       log 1.376412e-03 2.325498e-04 9.907076e-04 1.912279e-03
+g0    logit 2.776638e-02 2.329641e-03 2.354741e-02 3.271594e-02
+sigma   log 2.619356e+03 1.001549e+02 2.430297e+03 2.823121e+03
+pmix  logit 4.404323e-01 8.597149e-02 2.843234e-01 6.092832e-01
+
+
+
+region.N(tiger_secr_sig_het_2024)
+    estimate SE.estimate      lcl      ucl  n
+E.N 37.98897    6.418376 27.34353 52.77891 36
+R.N 37.98908    1.790692 36.43939 45.00445 36
+> 
