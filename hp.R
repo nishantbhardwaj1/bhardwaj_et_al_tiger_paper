@@ -7,7 +7,7 @@ library(holepunch)
 
 write_compendium_description(package = "tiger_secr", 
                              description = "code for estimating tiger density using camtrap and secr package")
-# to write a description, with dependencies listed 
+1# to write a description, with dependencies listed 
 # It's good practice to now go fill in the placeholder text.
 
 write_dockerfile(maintainer = "Nishant_Bhardwaj") 
