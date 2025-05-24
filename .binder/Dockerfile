@@ -1,4 +1,4 @@
-FROM rocker/binder:4.5.0
+FROM rocker/binder:4.4.1
 LABEL maintainer='Nishant_Bhardwaj'
 COPY --chown=${NB_USER} . ${HOME}
 USER ${NB_USER}
