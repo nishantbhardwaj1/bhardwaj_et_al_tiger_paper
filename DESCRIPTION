@@ -12,12 +12,16 @@ Depends:
     dataRetrieval,
     dplyr,
     ggplot2,
+    holepunch,
     lubridate,
     raster,
+    remotes,
     secr,
     sf,
     tidyr,
     tidyverse,
     viridis
+Remotes: 
+    karthik/holepunch
 Encoding: UTF-8
 LazyData: true
